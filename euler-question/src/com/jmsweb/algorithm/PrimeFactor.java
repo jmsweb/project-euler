@@ -24,4 +24,39 @@ public class PrimeFactor {
             counter = counter.add(BigInteger.ONE);
         }
     }
+
+    public List<Integer> composites(int num) {
+        List<Integer> primes = new ArrayList<>();
+        int counter = 4;
+        while(true) {
+            if (counter % 2 == 0 || counter % 3 == 0) {
+                primes.add(counter);
+            }
+
+            if(counter >= num) {
+                return primes;
+            }
+
+            counter++;
+        }
+    }
+
+    public List<Integer> primes(int num) {
+        List<Integer> primes = new ArrayList<>();
+        primes.add(2);
+        primes.add(3);
+
+        int counter = 4;
+        while(true) {
+            if (counter % 2 != 0 && counter % 3 != 0) {
+                primes.add(counter);
+            }
+
+            if(counter >= num) {
+                return primes;
+            }
+
+            counter++;
+        }
+    }
 }
