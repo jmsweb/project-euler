@@ -16,9 +16,8 @@ public class Problem3 {
     public static void main(String[] args) {
         Problem3 problem3 = new Problem3();
         primeFactor = problem3.getPrimeFactor();
-        System.out.println(primeFactor.getFactors("13195"));
-        System.out.println();
-        System.out.println(primeFactor.getFactors("600851475143"));
+        System.out.printf("Highest prime factor for %s: %s%n", 13195, primeFactor.highestFactor("13195"));
+        System.out.printf("Highest prime factor for %s: %s%n", "600851475143", primeFactor.highestFactor("600851475143"));
     }
 
     public PrimeFactor getPrimeFactor() {
