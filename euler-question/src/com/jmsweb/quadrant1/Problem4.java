@@ -23,8 +23,8 @@ public class Problem4 {
         products = numberPalindrome.largestPalindrome(3);
         System.out.printf("Maximum palindrome %s by %s-digit possible: %s%n", products.get(0).multiply(products.get(1)), 3, products);
 
-//        products = numberPalindrome.largestPalindrome(4);
-//        System.out.printf("Maximum palindrome %s by %s-digit possible: %s%n", products.get(0).multiply(products.get(1)), 4, products);
+        products = numberPalindrome.largestPalindrome(4);
+        System.out.printf("Maximum palindrome %s by %s-digit possible: %s%n", products.get(0).multiply(products.get(1)), 4, products);
     }
 
     public NumberPalindrome getNumberPalindrome() {
