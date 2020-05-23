@@ -59,4 +59,21 @@ public class PrimeFactor {
             counter++;
         }
     }
+
+    public int nth(int n) {
+        int count = 0, num = 1, i = 0;
+        while (count < n) {
+            num = num + 1;
+            for (i = 2; i <= num; i++) {
+                if (num % i == 0) {
+                    break;
+                }
+            }
+
+            if (i == num) {
+                count++;
+            }
+        }
+        return num;
+    }
 }
